@@ -5,12 +5,19 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Docteur Yigitoglu">
 	<main>
 		<section
-			class="bg-gradient-to-r bg-blue-900 to-blue-500 text-white h-[92vh] flex justify-center items-center"
-		>
-			<div class="flex flex-col lg:flex-row">
+			class="bg-gradient-to-r bg-blue-900 to-blue-500 text-white h-[92vh] flex justify-center items-center lg:justify-normal">
+			<div class="flex flex-col w-full lg:flex-row">
 				<div class="px-4 py-20 lg:w-1/2">
+
 					<p class="text-3xl font-bold mb-2">Thierry Yigitoglu</p>
-					<p class="text-xl mb-4">Cabinet dentaire situé à Paris</p>
+					<p class="text-xl mb-4 text-gray-300">Cabinet dentaire situé à 
+						<a href= "/" class="relative w-max one">
+							<span>Paris</span>
+							<span class="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-blue-500"></span>
+						</a>
+					</p>
+
+					
 					<a href="/rdv">
 						<div class="bg-blue-500 rounded-md py-2 px-4 object-fill inline-flex items-center">
 						  <span class="mr-2">Prendre rendez-vous</span>
@@ -56,7 +63,7 @@ import Layout from "../layouts/Layout.astro";
 					  
 				</div>
 
-				<div class="flex justify-center mb-0 lg:w-1/2">
+				<div class="flex justify-center mb-0 lg:w-1/2 ">
 					<!-- <div class="toothbrush-object absolute ml-10">
 						<img
 							class="h-20 "
@@ -66,10 +73,10 @@ import Layout from "../layouts/Layout.astro";
 					</div> -->
 					<div class="flex items-center justify-center">
 						<div
-							class="h-40 w-40 rounded-full overflow-hidden bg-white shadow-xl hover:shadow-2xl transition ease-in-out duration-1000"
+							class="h-40 w-40 rounded-full overflow-hidden bg-white shadow-xl hover:shadow-2xl transition ease-in-out duration-1000 lg:h-64 lg:w-64"
 						>
 							<img
-								class="h-full w-full object-cover ml-3"
+								class="h-full w-full object-cover ml-3 lg:ml-6"
 								src="/images/thierry-yigitoglu.png"
 								alt=""
 							/>
@@ -94,4 +101,7 @@ import Layout from "../layouts/Layout.astro";
 			transform: translateY(30px);
 		}
 	}
+	.one:hover span:last-child {
+  width: 100%;
+}
 </style>

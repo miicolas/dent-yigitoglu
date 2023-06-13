@@ -4,10 +4,107 @@
     --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 }
 html {
-    font-family: system-ui, sans-serif;
+    font-family: 'Freigeist Mono';
     background-color: #F6F6F6;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
-code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-        Bitstream Vera Sans Mono, Courier New, monospace;
+@font-face {
+    font-family: 'Freigeist Mono';
+    src: url('/font/FreigeistMono-BlackItalic.woff2') format('woff2'),
+        url('/font/FreigeistMono-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freigeist Mono';
+    src: url('/font/FreigeistMono-Bold.woff2') format('woff2'),
+        url('/font/FreigeistMono-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freigeist Mono';
+    src: url('/font/FreigeistMono-ThinItalic.woff2') format('woff2'),
+        url('/font/FreigeistMono-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freigeist Mono';
+    src: url('/font/FreigeistMono-MediumItalic.woff2') format('woff2'),
+        url('/font/FreigeistMono-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freigeist Mono';
+    src: url('/font/FreigeistMono-Medium.woff2') format('woff2'),
+        url('/font/FreigeistMono-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freigeist Mono';
+    src: url('/font/FreigeistMono-Thin.woff2') format('woff2'),
+        url('/font/FreigeistMono-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freigeist Mono';
+    src: url('/font/FreigeistMono-Italic.woff2') format('woff2'),
+        url('/font/FreigeistMono-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freigeist Mono';
+    src: url('/font/FreigeistMono-LightItalic.woff2') format('woff2'),
+        url('/font/FreigeistMono-LightItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freigeist Mono';
+    src: url('/font/FreigeistMono-Light.woff2') format('woff2'),
+        url('/font/FreigeistMono-Light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freigeist Mono';
+    src: url('/font/FreigeistMono-Black.woff2') format('woff2'),
+        url('/font/FreigeistMono-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freigeist Mono';
+    src: url('/font/FreigeistMono-BoldItalic.woff2') format('woff2'),
+        url('/font/FreigeistMono-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
