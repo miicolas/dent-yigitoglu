@@ -1,0 +1,15 @@
+---
+import SocialMediaData from "../data/socialMediaData";
+---
+
+<div class="flex flex-row list-none">
+    {
+        SocialMediaData.map((item) => (
+          <li class="px-2">
+            <a href={item.path} target="_blank">
+                <i class={item.svg} style="color: #000000;"></i>
+            </a>
+          </li>
+        ))
+      }
+</div>
