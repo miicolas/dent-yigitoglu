@@ -1,7 +1,97 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
-<Layout title="Template Astro Tailwind">
+
+<Layout title="Docteur Yigitoglu">
 	<main>
+		<section
+			class="bg-gradient-to-r bg-blue-900 to-blue-500 text-white h-[92vh] flex justify-center items-center"
+		>
+			<div class="flex flex-col lg:flex-row">
+				<div class="px-4 py-20 lg:w-1/2">
+					<p class="text-3xl font-bold mb-2">Thierry Yigitoglu</p>
+					<p class="text-xl mb-4">Cabinet dentaire situé à Paris</p>
+					<a href="/rdv">
+						<div class="bg-blue-500 rounded-md py-2 px-4 object-fill inline-flex items-center">
+						  <span class="mr-2">Prendre rendez-vous</span>
+						  <svg
+							class="ml-2"
+							width="20px"
+							height="20px"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						  >
+							<title></title>
+							<g id="Complete">
+							  <g id="arrow-right">
+								<g>
+								  <polyline
+									data-name="Right"
+									fill="none"
+									id="Right-2"
+									points="16.4 7 21.5 12 16.4 17"
+									stroke="#ffffff"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+								  ></polyline>
+					  
+								  <line
+									fill="none"
+									stroke="#ffffff"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									x1="2.5"
+									x2="19.2"
+									y1="12"
+									y2="12"
+								  ></line>
+								</g>
+							  </g>
+							</g>
+						  </svg>
+						</div>
+					  </a>
+					  
+				</div>
+
+				<div class="flex justify-center mb-0 lg:w-1/2">
+					<!-- <div class="toothbrush-object absolute ml-10">
+						<img
+							class="h-20 "
+							src="/images/brossedent.png"
+							alt=""
+						/>
+					</div> -->
+					<div class="flex items-center justify-center">
+						<div
+							class="h-40 w-40 rounded-full overflow-hidden bg-white shadow-xl hover:shadow-2xl transition ease-in-out duration-1000"
+						>
+							<img
+								class="h-full w-full object-cover ml-3"
+								src="/images/thierry-yigitoglu.png"
+								alt=""
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 </Layout>
+
+<style>
+	.toothbrush-object {
+		animation: object-floating 6s infinite ease-in-out alternate;
+	}
+
+	@keyframes object-floating {
+		0% {
+			transform: translateY(-30px);
+		}
+		100% {
+			transform: translateY(30px);
+		}
+	}
+</style>
