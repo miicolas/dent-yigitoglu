@@ -4,11 +4,9 @@
     --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 }
 html {
-    font-family: 'Freigeist Mono';
+    font-family: 'Arial';
     background-color: #F6F6F6;
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+
 }
 @font-face {
     font-family: 'Freigeist Mono';
