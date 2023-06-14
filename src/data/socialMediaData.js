@@ -1,7 +1,7 @@
 const navData = [
     {
         name : "Instagram",
-        path : "",
+        path : "https://instagram.com/dryigitoglu?igshid=MzRlODBiNWFlZA==",
         svg : "fa-brands fa-instagram"   
     },
     {
