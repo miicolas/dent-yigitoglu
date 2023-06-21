@@ -1,41 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import SocialMedia from "../components/socialMedia.astro";
+import Footer from "../components/Footer.astro";
+import Caroussel from "../components/Caroussel.astro";
+import CardTY from "../components/CardTY.astro";
 ---
 
 <Layout title="Docteur Yigitoglu">
 	<main>
-		<div class="bg-blue-900 to-blue-500">
+		<section class="bg-gradient-to-r bg-blue-900 to-blue-500 h-screen text-white">
 			<SocialMedia />
-		</div>
-		<section
-			class="bg-gradient-to-r bg-blue-900 to-blue-500 text-white h-full flex justify-center items-center md:justify-normal">
-			
-			<div class="flex flex-col w-full md:flex-row">
-				<div class="px-4 py-20  margin-auto  lg:w-1/2 md:ml-10 text-center lg:text-left">
-
-					<p class="text-3xl font-bold mb-3">Thierry Yigitoglu</p>
-					<p class="text-sm mb-6 text-gray-300 lg:text-md">Je suis un chirurgien dentiste basé à Paris 16ème, 
+			<div class="flex flex-col md:flex-row">
+				<div class="flex flex-col justify-center items-center md:ml-10 px-4 py-20 margin-auto lg:w-1/2 text-center md:text-left">
+					<p class="text-3xl font-bold mb-3 lg:text-4xl">Thierry Yigitoglu</p>
+					<p class="text-sm mb-6 text-gray-300 lg:text-lg">Je suis un chirurgien dentiste basé à Paris 16ème, 
 						<a href= "/" class="relative w-max one text-blue-200">
-							<span>au Trocadéro</span>
+							<span>au Trocadéro.</span>
 							<span class="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-blue-500"></span>
 						</a>
-					. Je suis passionné par mon métier et je m'efforce de fournir des soins de qualité pour la santé bucco-dentaire de mes patients. N'hésitez pas à me contacter pour  
+					Je suis passionné par mon métier et je m'efforce de fournir des soins de qualité pour la santé bucco-dentaire de mes patients. N'hésitez pas à me contacter pour  
 						<a href= "/" class="relative w-max one text-blue-200">
 							<span>prendre rendez-vous</span>
 							<span class="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-blue-500"></span>
 						</a>
 					et prendre soin de votre sourire !
-				
-
 					</p>
-
-					
 					<a href="/rdv">
-						<div class="bg-blue-500 rounded-md py-2 px-4 object-fill inline-flex items-center">
+						<div class="group bg-blue-500 rounded-md py-2 px-4 object-fill inline-flex items-center ease-in-out duration-500 hover:bg-blue-700 ">
 						  <span class="mr-2">Prendre rendez-vous</span>
 						  <svg
-							class="ml-2"
+							class="ml-2 group-hover:scale-75 ease-in-out duration-500"
 							width="20px"
 							height="20px"
 							viewBox="0 0 24 24"
@@ -86,7 +80,7 @@ import SocialMedia from "../components/socialMedia.astro";
 					</div> -->
 					<div class="flex items-center justify-center">
 						<div
-							class="h-40 w-40 rounded-full border-gray-950 overflow-hidden bg-white shadow-lg hover:shadow-2xl ease-in-out duration-500 lg:h-64 lg:w-64"
+							class="h-40 w-40 rounded-full border-gray-950 overflow-hidden bg-white shadow-lg hover:shadow-2xl hover:scale-105 ease-in-out duration-500 lg:h-64 lg:w-64"
 						>
 							<img
 								class="h-full w-full object-cover ml-3 transition-transform hover:scale-110 ease-in-out duration-500 lg:ml-6"
@@ -98,7 +92,20 @@ import SocialMedia from "../components/socialMedia.astro";
 				</div>
 			</div>
 		</section>
+		<section class="bg-gradient-to-r bg-white-900 to-gray-500 h-96 text-white  md:justify-normal md:h-screen">
+			<div class="flex flex-col p-10">
+				<h1 class="text-gray-700 font-bold text-3xl mb-10">Une visite virtuelle de notre cabinet</h1>
+				<div class="w-full">
+					<Caroussel/>
+				</div>
+				
+			</div>
+		</section>
+		<section class="bg-gradient-to-r bg-blue-900 to-blue-500 h-screen text-white flex justify-center items-center">
+			<CardTY />
+		</section>
 	</main>
+	<Footer />
 </Layout>
 
 <style>
