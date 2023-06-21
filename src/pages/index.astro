@@ -4,14 +4,15 @@ import SocialMedia from "../components/socialMedia.astro";
 import Footer from "../components/Footer.astro";
 import Caroussel from "../components/Caroussel.astro";
 import CardTY from "../components/CardTY.astro";
+import Avis from "../components/Avis.astro"
 ---
 
 <Layout title="Docteur Yigitoglu">
 	<main>
-		<section class="bg-gradient-to-r bg-blue-900 to-blue-500 h-screen text-white">
+		<section class="bg-gradient-to-r bg-blue-900 to-blue-500  text-white">
 			<SocialMedia />
-			<div class="flex flex-col md:flex-row">
-				<div class="flex flex-col justify-center items-center md:ml-10 px-4 py-20 margin-auto lg:w-1/2 text-center md:text-left">
+			<div class="flex flex-col justify-center items-center h-[90vh] md:h-screen md:flex-row">
+				<div class="flex flex-col  md:ml-10 px-4 py-20 margin-auto lg:w-1/2 text-center md:text-left">
 					<p class="text-3xl font-bold mb-3 lg:text-4xl">Thierry Yigitoglu</p>
 					<p class="text-sm mb-6 text-gray-300 lg:text-lg">Je suis un chirurgien dentiste basé à Paris 16ème, 
 						<a href= "/" class="relative w-max one text-blue-200">
@@ -92,8 +93,8 @@ import CardTY from "../components/CardTY.astro";
 				</div>
 			</div>
 		</section>
-		<section class="bg-gradient-to-r bg-white-900 to-gray-500 h-96 text-white  md:justify-normal md:h-screen">
-			<div class="flex flex-col p-10">
+		<section class="bg-gradient-to-r bg-white-900 to-gray-500 h-[70vh] text-white md:h-screen flex justify-center">
+			<div class="flex flex-col justify-center p-10">
 				<h1 class="text-gray-700 font-bold text-3xl mb-10">Une visite virtuelle de notre cabinet</h1>
 				<div class="w-full">
 					<Caroussel/>
@@ -101,8 +102,17 @@ import CardTY from "../components/CardTY.astro";
 				
 			</div>
 		</section>
-		<section class="bg-gradient-to-r bg-blue-900 to-blue-500 h-screen text-white flex justify-center items-center">
-			<CardTY />
+		<section class="bg-gradient-to-r bg-blue-900 to-blue-500 h-fit  text-white flex flex-col justify-center items-center">
+			<div class="p-8">
+				<div class="py-4 flex justify-center">
+					<CardTY />
+				</div>
+				<div class="py-4">
+					<Avis />
+				</div>
+			</div>
+			
+			
 		</section>
 	</main>
 	<Footer />
