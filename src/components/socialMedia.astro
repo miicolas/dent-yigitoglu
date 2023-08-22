@@ -2,12 +2,12 @@
 import SocialMediaData from "../data/socialMediaData";
 ---
 
-<div class="flex flex-row list-none p-6">
+<div class="flex flex-row list-none pt-6 px-6">
     {
         SocialMediaData.map((item) => (
           <li class="px-2">
             <a href={item.path} target="_blank">
-              <div class="bg-white bg-opacity-10 p-2 rounded-md ease-in-out duration-500 hover:bg-opacity-20 hover:rounded-sm">
+              <div class="bg-white bg-opacity-10 px-3 py-3 rounded-md ease-in-out duration-500 hover:bg-opacity-20 hover:rounded-lg focus:ring-4 focus:outline-none">
                 <i class={`fa fa-${item.svg} fa-xl`} style="color: #131313;"></i>
               </div>
             </a>
