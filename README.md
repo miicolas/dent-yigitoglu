@@ -1,55 +1,37 @@
-# Astro Starter Kit: Basics
+## Freelance Project - Dental Clinic Website
 
-```
-npm create astro@latest -- --template basics
-```
+Welcome to the README file for the dental clinic website project, developed using Astro.js and Tailwind CSS. This document aims to provide you with essential information about the project, its context, structure, and steps to set it up.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### Project Overview
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This project involves creating a modern website for a dental clinic. The site will be developed using the Astro.js framework to optimize performance and Tailwind CSS to facilitate the development of the user interface.
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+### Technologies Used
 
+- Astro.js: A modern framework that generates static and optimized websites while offering a dynamic development experience.
+- Tailwind CSS: A utility CSS library that allows for rapidly creating elegant designs by combining predefined classes.
+- HTML5: The markup language used to structure the site's content.
+- CSS3: Used for styling and formatting the user interface.
+- JavaScript: Client-side programming for interactivity and dynamic features.
+Project Structure
 
-## 🚀 Project Structure
+### The project is organized as follows:
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```
 /
 ├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+│   ├── font/             # Font 
+│   ├── images/           # Images 
+├── src/                  # Astro.js source directory
+│   ├── components/       # Reusable components
+│   ├── data/             # Data
+│   ├── layouts/          # Layout templates
+│   ├── pages/            # Application pages
+├── .astro.config.js      # Astro.js configuration
+├── tailwind.config.js    # Tailwind configuration 
+└── README.md             # This README file
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-Any static assets, like images, can be placed in the `public/` directory.
+This README has provided you with an overview of the project and instructions for its setup and development. For any questions or further assistance, feel free to contact me at nicolas.becharat.dev@gmail.com.
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Happy coding!
